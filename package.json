@@ -1,0 +1,11 @@
+{
+  "name": "funke",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pontuswallberg/funke.git",
+  "author": "Pontus Wallberg <pontus.wallberg@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
