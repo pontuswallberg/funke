@@ -1,3 +1,16 @@
+@import "variables";
+
+html {
+    background-color: $body-background;
+    font-size: $body-size;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: $render-mode;
+}
+
+body {
+    font-family: $family-sans-serif;
+}
 h1 {
     color: red;
 }
