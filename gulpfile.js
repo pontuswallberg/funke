@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 
 var autoprefixer = require('gulp-autoprefixer');
 var csso = require('gulp-csso');
@@ -6,21 +7,24 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var http = require('http-server');
 
-let srcFile = 'scss/funke.scss';
+gulp.task('dev', ['server', 'watch']);
 
-gulp.task('watch', function () {
+gulp.task('server', function () {
 	let server = http.createServer({
 		root: './docs'
 	});
 	server.listen(8000);
-	console.log('Listening on http://localhost:8000')
+	gutil.log('Listening on http://localhost:8000')
+});
+
+gulp.task('watch', function () {
 	gulp.watch('scss/*.scss', ['sass']);
 });
 
 gulp.task('sass', function () {
-	return gulp.src(srcFile)
+	return gulp.src('scss/funke.scss')
 		.pipe(sourcemaps.init())
-		.pipe(sass()) // Converts Sass to CSS with gulp-sass
+		.pipe(sass().on('error', sass.logError)) /// Converts Sass to CSS with gulp-sass
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
 		})) // Autoprefix CSS with gulp-autoprefixer

@@ -5,10 +5,8 @@
 	"showOutput": "always",
 	"tasks": [
 		{
-			"taskName": "watch",
-			"args": [
-				"watch"
-			],
+			"taskName": "dev",
+			"echoCommand": true,
 			"isBuildCommand": true,
 			"isBackground": true
 		}
