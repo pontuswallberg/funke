@@ -14,7 +14,7 @@ gulp.task('watch', function () {
 	});
 	server.listen(8000);
 	console.log('Listening on http://localhost:8000')
-	gulp.watch(srcFile, ['sass']);
+	gulp.watch('scss/*.scss', ['sass']);
 });
 
 gulp.task('sass', function () {
