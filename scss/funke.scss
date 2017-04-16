@@ -6,11 +6,34 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: $render-mode;
+    height: 100%;
+}
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+body * + * {
+    margin-top: 1rem;
 }
 
 body {
-    font-family: $family-sans-serif;
     color: $black;
+    display: flex;
+    flex-direction: column;
+    font-family: $family-sans-serif;
+    min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
 }
 
 h1 {
@@ -32,6 +55,12 @@ h6 {
     font-size: $font-size-h6;
 }
 
-:fullscreen a {
-    display: flex
+main {
+    flex: 1 0 auto;
 }
+footer {
+    background-color: $gray;
+}
+
+@import "utilities";
+@import "grid/grid";
