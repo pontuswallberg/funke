@@ -13,8 +13,47 @@
 <body>
 
 <main>
-	<h1>Funke Form!</h1>
-	<p>An awesome framework by Henrik and Pontus</p>
+	<article class="funke">
+		<h1>Funke forms!</h1>
+
+		<form>
+			<h2>Log In</h2>
+
+			<label for="text">Username</label>
+			<input id="username" type="email" name="email" required />
+			<p>this is the help text</p>
+
+			<label for="password">Password</label>
+			<input id="password" type="password" name="password" required />
+			<p>this is the help text</p>
+
+			<button>Log In</button>
+			<a href="/">Cancel</a>
+		</form>
+
+		<form>
+			<h2>Kitchen Sink</h2>
+
+			<label for="text">text</label>
+			<input id="text" type="text" name="text" required />
+			<p>this is the help text</p>
+
+			<label for="email">email</label>
+			<input id="email" type="email" name="email" required />
+			<p>this is the help email</p>
+
+			<label for="date">date</label>
+			<input id="date" type="date" name="date" required />
+			<p>this is the help date</p>
+
+			<label for="select">select</label>
+			<select name="select" id="select">
+				<option value="default">default value</option>
+				<option value="other">other value</option>
+			</select>
+			<p>this is the help text</p>
+		</form>
+	</article>
 </main>
 
 <footer>
