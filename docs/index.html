@@ -35,11 +35,78 @@
                         <div class="col">
                             <h2>Grid</h2>
                             <p>Awesome grid.</p>
+                            <h3>Columns</h3>
                             <div class="row">
-                                <div class="col-xs-6 bg-blue">col-xs-6</div>
-                                <div class="col-xs-3 bg-blue">col-xs-3</div>
-                                <div class="col-xs-2 bg-blue">col-xs-2</div>
-                                <div class="col-xs-1 bg-blue">col-xs-1</div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="row is-nested">
+                                        <div class="col bg-blue">col</div>
+                                        <div class="col bg-light-blue-2">col</div>
+                                        <div class="col bg-blue">col</div>
+                                        <div class="col bg-light-blue-2">col</div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <figure>
+                                        <pre>
+                                            <code>
+&lt;div class="row">
+    &lt;div class="col bg-blue">col&lt;/div>
+    &lt;div class="col bg-light-blue-2">col&lt;/div>
+    &lt;div class="col bg-blue">col&lt;/div>
+    &lt;div class="col bg-light-blue-2">col&lt;/div>
+&lt;/div>
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                </div>
+                            </div>
+                            <h3>Responsive sizing</h3>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="row is-nested">
+                                        <div class="col-xs-6 col-md-3 bg-blue">col-xs-6<br>col-md-3</div>
+                                        <div class="col-xs-6 col-md-6 bg-light-blue-2">col-xs-6<br>col-md-6</div>
+                                        <div class="col-xs-12 col-md-3 bg-light-blue">col-xs-12<br>col-md-3</div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <figure>
+                                        <pre>
+                                            <code>
+&lt;div class="row">
+    &lt;div class="col-xs-6 col-md-3 bg-blue">&lt;/div>
+    &lt;div class="col-xs-6 col-md-6 bg-light-blue-2">&lt;/div>
+    &lt;div class="col-xs-12 col-md-3 bg-light-blue">&lt;/div>
+&lt;/div>
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                </div>
+                            </div>
+                            <h3>Offeset</h3>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="row is-nested">
+                                        <div class="col-xs-6 offset-xs-3 bg-blue">col-xs-6<br>offset-xs-3</div>
+                                        <div class="col-xs-4 offset-xs-8 bg-light-blue-2">col-xs-4<br>offset-xs-8</div>
+                                        <div class="col-xs-2 offset-xs-1 bg-blue">col-xs-2<br>offset-xs-1</div>
+                                        <div class="col-xs-7 offset-xs-2 bg-blue">col-xs-7<br>offset-xs-2</div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <figure>
+                                        <pre>
+                                            <code>
+&lt;div class="row">
+    &lt;div class="col-xs-6 offset-xs-3 bg-blue">&lt;/div>
+    &lt;div class="col-xs-4 offset-xs-8 bg-light-blue-2">&lt;/div>
+    &lt;div class="col-xs-2 offset-xs-1 bg-blue">&lt;/div>
+    &lt;div class="col-xs-7 offset-xs-2 bg-blue">&lt;/div>
+&lt;/div>
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
