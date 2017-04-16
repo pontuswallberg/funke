@@ -730,6 +730,14 @@ gulp-csso@^3.0.0:
     gulp-util "^3.0.6"
     vinyl-sourcemaps-apply "^0.2.1"
 
+gulp-mustache@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/gulp-mustache/-/gulp-mustache-2.3.0.tgz#795b1a4d887eb7ce794eb4d40c013d7dd06f9ddb"
+  dependencies:
+    gulp-util "^3.0.7"
+    mustache "^2.2.1"
+    through2 "^2.0.0"
+
 gulp-sass@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gulp-sass/-/gulp-sass-3.1.0.tgz#53dc4b68a1f5ddfe4424ab4c247655269a8b74b7"
@@ -757,7 +765,7 @@ gulp-sourcemaps@^2.6.0:
     through2 "2.X"
     vinyl "1.X"
 
-gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@^3.0.6:
+gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@^3.0.6, gulp-util@^3.0.7:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f"
   dependencies:
@@ -1363,6 +1371,10 @@ multipipe@^0.1.2:
   resolved "https://registry.yarnpkg.com/multipipe/-/multipipe-0.1.2.tgz#2a8f2ddf70eed564dff2d57f1e1a137d9f05078b"
   dependencies:
     duplexer2 "0.0.2"
+
+mustache@^2.2.1:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/mustache/-/mustache-2.3.0.tgz#4028f7778b17708a489930a6e52ac3bca0da41d0"
 
 nan@^2.3.2:
   version "2.6.2"

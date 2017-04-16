@@ -3,9 +3,10 @@ var gutil = require('gulp-util');
 
 var autoprefixer = require('gulp-autoprefixer');
 var csso = require('gulp-csso');
+var http = require('http-server');
+var mustache = require("gulp-mustache");
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var http = require('http-server');
 
 gulp.task('dev', ['server', 'watch']);
 
@@ -19,6 +20,7 @@ gulp.task('server', function () {
 
 gulp.task('watch', function () {
 	gulp.watch('scss/*.scss', ['sass']);
+	gulp.watch('./templates/**/*.html', ['mustache']);
 });
 
 gulp.task('sass', function () {
@@ -33,3 +35,11 @@ gulp.task('sass', function () {
 		.pipe(gulp.dest('css'))
 		.pipe(gulp.dest('docs/css'));
 });
+
+gulp.task('mustache', function () {
+	return gulp.src('./templates/*.html')
+		.pipe(mustache({
+			msg: 'hello'
+		}))
+		.pipe(gulp.dest('docs'));
+})
