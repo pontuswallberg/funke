@@ -1,0 +1,163 @@
+@import "variables";
+@import "../mixins";
+
+// Container wrap content in this to set max-width
+.container {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $gutter;
+	padding-right: $gutter;
+	max-width: 100%;
+
+	&.is-fullwidth {
+		max-width: none;
+		width: auto;
+	}
+	&.no-gutter {
+		@extend %no-gutter;
+	}
+
+	@include media-min-sm {
+		width: map-get($breakpoints, 'sm');
+	}
+	@include media-min-md {
+		width: map-get($breakpoints, 'md');
+	}
+	@include media-min-lg {
+		width: map-get($breakpoints, 'lg');
+	}
+	@include media-min-xl {
+		width: map-get($breakpoints, 'xl');
+	}
+}
+// Rows holds a set of columns
+.row {
+	display: flex;
+	flex-wrap: wrap;
+
+	&.is-nested {
+		margin-left:-$gutter;
+		margin-right:-$gutter;
+	}
+	&.no-gutter {
+		@extend %no-gutter;
+		> .col,
+		> [class*="col-"] {
+			@extend %no-gutter;
+		}
+	}
+}
+
+.col {
+	@extend %column;
+	display: block;
+	flex: 1 1 0;
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+	// Base css for all columns
+	@for $i from 1 through $columns {
+		.col-#{$breakpoint}-#{$i} {
+			@extend %column;
+		}
+	}
+	.col-#{$breakpoint}-auto {
+		@extend %column;
+		flex: 0 0 auto;
+		width: auto;
+	}
+}
+@for $i from 1 through $columns {
+	.col-xs-#{$i} {
+		@extend %column;
+		width: percentage($i / $columns);
+	}
+	.offset-xs-#{$i} {
+		margin-left: percentage($i / $columns);
+	}
+}
+@include media-min-sm {
+	@for $i from 1 through $columns {
+		.col-sm-#{$i} {
+			width: percentage($i / $columns);
+		}
+		.offset-sm-#{$i} {
+			margin-left: percentage($i / $columns);
+		}
+	}
+}
+@include media-min-md {
+	@for $i from 1 through $columns {
+		.col-md-#{$i} {
+			width: percentage($i / $columns);
+		}
+		.offset-md-#{$i} {
+			margin-left: percentage($i / $columns);
+		}
+	}
+}
+@include media-min-lg {
+	@for $i from 1 through $columns {
+		.col-lg-#{$i} {
+			width: percentage($i / $columns);
+		}
+		.offset-lg-#{$i} {
+			margin-left: percentage($i / $columns);
+		}
+	}
+}
+@include media-min-xl {
+	@for $i from 1 through $columns {
+		.col-xl-#{$i} {
+			width: percentage($i / $columns);
+		}
+		.offset-xl-#{$i} {
+			margin-left: percentage($i / $columns);
+		}
+	}
+}
+
+// Items (children)
+.align-items-end {
+	align-items: flex-end;
+}
+.align-items-start {
+	align-items: flex-start;
+}
+.align-items-stretch {
+	align-items: stretch;
+}
+.align-items-center {
+	align-items: center;
+}
+// Align self
+.align-self-end {
+	align-self: flex-end;
+}
+.align-self-start {
+	align-self: flex-start;
+}
+.align-self-stretch {
+	align-self: stretch;
+}
+.align-self-center {
+	align-self: center;
+}
+// Justify content
+.justify-content-start {
+	justify-content: flex-start;
+}
+.justify-content-end {
+	justify-content: flex-end;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
+.justify-content-around {
+	justify-content: space-around;
+}

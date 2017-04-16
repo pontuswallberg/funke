@@ -1,0 +1,48 @@
+// Min width media queries SM -> XL	
+@mixin media-min-sm {
+	@media screen and (min-width: map-get($breakpoints, 'sm')) {
+		@content;
+	}
+}
+@mixin media-min-md {
+	@media screen and (min-width: map-get($breakpoints, 'md')) {
+		@content;
+	}
+}
+@mixin media-min-lg {
+	@media screen and (min-width: map-get($breakpoints, 'lg')) {
+		@content;
+	}
+}
+@mixin media-min-xl {
+	@media screen and (min-width: map-get($breakpoints, 'xl')) {
+		@content;
+	}
+}
+
+// Max width meida queries XS-XL
+@mixin media-max-xs {
+	@media screen and (max-width: map-get($breakpoints, 'xs') - 1px) {
+		@content;
+	}
+}
+@mixin media-max-sm {
+	@media screen and (max-width: map-get($breakpoints, 'sm') - 1px) {
+		@content;
+	}
+}
+@mixin media-max-md {
+	@media screen and (max-width: map-get($breakpoints, 'md') - 1px) {
+		@content;
+	}
+}
+@mixin media-max-lg {
+	@media screen and (max-width: map-get($breakpoints, 'lg') - 1px) {
+		@content;
+	}
+}
+@mixin media-max-xl {
+	@media screen and (max-width: map-get($breakpoints, 'xl') - 1px) {
+		@content;
+	}
+}
