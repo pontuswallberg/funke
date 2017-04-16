@@ -31,8 +31,8 @@ gulp.task('sass', function () {
 			browsers: ['last 2 versions'],
 		})) // Autoprefix CSS with gulp-autoprefixer
 		.pipe(csso())
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('css'))
+		.pipe(sourcemaps.write('.'))
+		// .pipe(gulp.dest('css'))
 		.pipe(gulp.dest('docs/css'));
 });
 
