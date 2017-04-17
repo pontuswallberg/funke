@@ -70,7 +70,6 @@
 }
 @for $i from 1 through $columns {
 	.col-xs-#{$i} {
-		@extend %column;
 		width: percentage($i / $columns);
 	}
 	.offset-xs-#{$i} {

@@ -1,12 +1,12 @@
 // Colors
 $black: #222 !default;
-$blue: #0066ff;
-$gray: #ccc;
+$blue: #0066ff !default;
+$gray: #ccc !default;
 
 //Test
-$dark-blue: #0F619B; // Or #0C2AE8?
-$light-blue: #0C9EE8;
-$light-blue-2: #0DEDFF;
+$dark-blue: #0F619B !default; // Or #0C2AE8?
+$light-blue: #0C9EE8 !default;
+$light-blue-2: #0DEDFF !default;
 
 $shadow: 0px 1px 2px rgba(10, 10, 10, 0.1) !default;
 
