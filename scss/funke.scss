@@ -67,6 +67,18 @@ footer {
     background-color: $gray;
 }
 
+b, strong {
+    font-weight: bold;
+}
+
+.padding {
+    padding: $gutter;
+}
+
+.margin {
+    margin: $gutter;
+}
+
 @import "utilities";
 @import "grid/grid";
 @import "form";
