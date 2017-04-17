@@ -15,8 +15,11 @@ button {
 	outline: none;
 	padding: 0.25em;
 	min-height: 2em;
+	&::placeholder {
+		color: $gray;
+	}
 	&:focus {
-		border: 1px solid $blue;
+		border: 1px solid $light-blue;
 	}
 }
 
@@ -33,6 +36,14 @@ textarea {
 		font-size: 0.7rem;
 		margin-top: 0.5em;
 		display: block;
+	}
+	.validating & {
+		&:invalid {
+			border: 1px solid $light-red;
+		}
+		&:valid {
+			border: 1px solid $light-green;
+		}
 	}
 }
 
@@ -53,6 +64,9 @@ input[type="radio"] {
 button {
 	box-shadow: $shadow;
 	margin-right: 0.5em;
+	&[type="submit"] {
+		color: $light-blue;
+	}
 	&:active {
 		box-shadow: none;
 		position: relative;

@@ -1,0 +1,12 @@
+@import "variables";
+code.hljs.html {
+	.hljs-tag {
+		color: $light-blue;
+	}
+	.hljs-attr {
+		color: $light-red;
+	}
+	.hljs-string {
+		color: $light-green;
+	}
+}

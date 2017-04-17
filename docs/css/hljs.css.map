@@ -1,0 +1,1 @@
+{"version":3,"sources":["hljs.scss"],"names":[],"mappings":"AACA,wB,CAEE,a,CAFF,yB,CAKE,a,CALF,2B,CAQE,a","file":"hljs.css","sourcesContent":["@import \"variables\";\ncode.hljs.html {\n\t.hljs-tag {\n\t\tcolor: $light-blue;\n\t}\n\t.hljs-attr {\n\t\tcolor: $light-red;\n\t}\n\t.hljs-string {\n\t\tcolor: $light-green;\n\t}\n}\n"]}
