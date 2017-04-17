@@ -54,66 +54,69 @@
 	@extend %column;
 	display: block;
 	flex: 1 1 0;
-}
 
-@each $breakpoint in map-keys($breakpoints) {
-	// Base css for all columns
-	@for $i from 1 through $columns {
-		.col-#{$breakpoint}-#{$i} {
-			@extend %column;
-		}
-	}
-	.col-#{$breakpoint}-auto {
-		@extend %column;
+	&.is-auto {
 		flex: 0 0 auto;
 		width: auto;
 	}
-}
-@for $i from 1 through $columns {
-	.col-xs-#{$i} {
-		width: percentage($i / $columns);
-	}
-	.offset-xs-#{$i} {
-		margin-left: percentage($i / $columns);
-	}
-}
-@include media-min-sm {
 	@for $i from 1 through $columns {
-		.col-sm-#{$i} {
+		&.is-#{$i} {
+			flex: 1 0 auto;
 			width: percentage($i / $columns);
 		}
-		.offset-sm-#{$i} {
+		&.is-offset-#{$i} {
+			margin-left: percentage($i / $columns);
+		}
+		&.is-#{$i}-on-xs {
+			flex: 1 0 auto;
+			width: percentage($i / $columns);
+		}
+		.is-offset-#{$i}-on-xs {
 			margin-left: percentage($i / $columns);
 		}
 	}
-}
-@include media-min-md {
-	@for $i from 1 through $columns {
-		.col-md-#{$i} {
-			width: percentage($i / $columns);
-		}
-		.offset-md-#{$i} {
-			margin-left: percentage($i / $columns);
-		}
-	}
-}
-@include media-min-lg {
-	@for $i from 1 through $columns {
-		.col-lg-#{$i} {
-			width: percentage($i / $columns);
-		}
-		.offset-lg-#{$i} {
-			margin-left: percentage($i / $columns);
+	@include media-min-sm {
+		@for $i from 1 through $columns {
+			&.is-#{$i}-on-sm {
+				flex: 1 0 auto;
+				width: percentage($i / $columns);
+			}
+			&.is-offset-#{$i}-on-sm {
+				margin-left: percentage($i / $columns);
+			}
 		}
 	}
-}
-@include media-min-xl {
-	@for $i from 1 through $columns {
-		.col-xl-#{$i} {
-			width: percentage($i / $columns);
+	@include media-min-md {
+		@for $i from 1 through $columns {
+			&.is-#{$i}-on-md {
+				flex: 1 0 auto;
+				width: percentage($i / $columns);
+			}
+			&.is-offset-#{$i}-on-md {
+				margin-left: percentage($i / $columns);
+			}
 		}
-		.offset-xl-#{$i} {
-			margin-left: percentage($i / $columns);
+	}
+	@include media-min-lg {
+		@for $i from 1 through $columns {
+			&.is-#{$i}-on-lg {
+				flex: 1 0 auto;
+				width: percentage($i / $columns);
+			}
+			&.is-offset-#{$i}-on-lg {
+				margin-left: percentage($i / $columns);
+			}
+		}
+	}
+	@include media-min-xl {
+		@for $i from 1 through $columns {
+			&.is-#{$i}-on-xl {
+				flex: 1 0 auto;
+				width: percentage($i / $columns);
+			}
+			&.is-offset-#{$i}-on-xl {
+				margin-left: percentage($i / $columns);
+			}
 		}
 	}
 }

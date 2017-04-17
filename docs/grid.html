@@ -47,98 +47,116 @@
 					<p>Awesome grid.</p>
 					<h3>Columns</h3>
 					<div class="row">
-						<div class="col-xs-12 col-md-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<div class="row is-nested">
-								<div class="col bg-blue">col</div>
-								<div class="col bg-light-blue-2">col</div>
-								<div class="col bg-blue">col</div>
-								<div class="col bg-light-blue-2">col</div>
-							</div>
+	<div class="col bg-blue">col</div>
+	<div class="col bg-light-blue-2">col</div>
+	<div class="col bg-blue">col</div>
+	<div class="col bg-light-blue-2">col</div>							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<figure>
 								<pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
 	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col bg-blue"</span>&gt;</span>col<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col bg-light-blue-2"</span>&gt;</span>col<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col bg-blue"</span>&gt;</span>col<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col bg-light-blue-2"</span>&gt;</span>col<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+							</figure>
+						</div>
+					</div>
+					<h3>Column sizing</h3>
+					<div class="row">
+						<div class="col is-12-on-xs is-6-on-md">
+							<div class="row is-nested">
+	<div class="col is-6-on-xs is-3-on-md bg-blue">col<br>is-6-on-xs<br>is-3-on-md</div>
+	<div class="col is-6-on-xs is-6-on-md bg-light-blue-2">col<br>is-6-on-xs<br>is-6-on-md</div>
+	<div class="col is-12-on-xs is-3-on-md bg-light-blue">col<br>is-12-on-xs<br>is-3-on-md</div>							</div>
+						</div>
+						<div class="col is-12-on-xs is-6-on-md">
+							<figure>
+								<pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-6-on-xs is-3-on-md bg-blue"</span>&gt;</span>col<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-6-on-xs<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-3-on-md<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-6-on-xs is-6-on-md bg-light-blue-2"</span>&gt;</span>col<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-6-on-xs<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-6-on-md<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-12-on-xs is-3-on-md bg-light-blue"</span>&gt;</span>col<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-12-on-xs<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-3-on-md<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 							</figure>
 						</div>
 					</div>
 					<h3>Responsive sizing</h3>
 					<div class="row">
-						<div class="col-xs-12 col-md-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<div class="row is-nested">
-								<div class="col-xs-6 col-md-3 bg-blue">col-xs-6<br>col-md-3</div>
-								<div class="col-xs-6 col-md-6 bg-light-blue-2">col-xs-6<br>col-md-6</div>
-								<div class="col-xs-12 col-md-3 bg-light-blue">col-xs-12<br>col-md-3</div>
-							</div>
+	<div class="col is-6-on-xs is-3-on-md bg-blue">col<br>is-6-on-xs<br>is-3-on-md</div>
+	<div class="col is-6-on-xs is-6-on-md bg-light-blue-2">col<br>is-6-on-xs<br>is-6-on-md</div>
+	<div class="col is-12-on-xs is-3-on-md bg-light-blue">col<br>is-12-on-xs<br>is-3-on-md</div>							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<figure>
 								<pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6 col-md-3 bg-blue"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6 col-md-6 bg-light-blue-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-12 col-md-3 bg-light-blue"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-6-on-xs is-3-on-md bg-blue"</span>&gt;</span>col<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-6-on-xs<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-3-on-md<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-6-on-xs is-6-on-md bg-light-blue-2"</span>&gt;</span>col<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-6-on-xs<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-6-on-md<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-12-on-xs is-3-on-md bg-light-blue"</span>&gt;</span>col<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-12-on-xs<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-3-on-md<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 							</figure>
 						</div>
 					</div>
 					<h3>Offeset</h3>
 					<div class="row">
-						<div class="col-xs-12 col-md-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<div class="row is-nested">
-								<div class="col-xs-6 offset-xs-3 bg-blue">col-xs-6<br>offset-xs-3</div>
-								<div class="col-xs-4 offset-xs-8 bg-light-blue-2">col-xs-4<br>offset-xs-8</div>
-								<div class="col-xs-2 offset-xs-1 bg-blue">col-xs-2<br>offset-xs-1</div>
-								<div class="col-xs-7 offset-xs-2 bg-blue">col-xs-7<br>offset-xs-2</div>
-							</div>
+	<div class="col is-6 is-offset-3 bg-blue">col<br>is-6<br>is-offset-3</div>
+	<div class="col is-4 is-offset-8 bg-light-blue-2">col<br>is-4<br>is-offset-8</div>
+	<div class="col is-3 is-offset-1 bg-blue">col<br>is-3<br>is-offset-1</div>
+	<div class="col is-6 is-offset-2 bg-blue">col<br>is-6<br>is-offset-2</div>							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<figure>
 								<pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6 offset-xs-3 bg-blue"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-4 offset-xs-8 bg-light-blue-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-2 offset-xs-1 bg-blue"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-7 offset-xs-2 bg-blue"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-6 is-offset-3 bg-blue"</span>&gt;</span>col<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-6<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-offset-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-4 is-offset-8 bg-light-blue-2"</span>&gt;</span>col<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-4<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-offset-8<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-3 is-offset-1 bg-blue"</span>&gt;</span>col<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-3<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-offset-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-6 is-offset-2 bg-blue"</span>&gt;</span>col<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-6<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>is-offset-2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 							</figure>
 						</div>
 					</div>
 					<h3>Nesting</h3>
 					<div class="row">
-						<div class="col-xs-12 col-md-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<div class="row is-nested">
-								<div class="col-xs-8 bg-blue">
-									col-xs-8
-									<div class="row is-nested">
-										<div class="col-xs-4 bg-light-blue">
-											col-xs-4
-										</div>
-										<div class="col-xs-8 bg-dark-blue">
-											col-xs-8
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-4 bg-light-blue-2">col-xs-4</div>
-							</div>
+	<div class="col is-8 bg-blue">
+		col is-8
+		<div class="row is-nested">
+			<div class="col is-4 bg-light-blue">
+				col is-4
+			</div>
+			<div class="col is-8 bg-dark-blue">
+				col is-8
+			</div>
+		</div>
+	</div>
+	<div class="col is-4 bg-light-blue-2">
+		col is-4
+	</div>							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<figure>
 								<pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-8 bg-blue"</span>&gt;</span>
-		col-xs-8
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-8 bg-blue"</span>&gt;</span>
+		col is-8
 		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row is-nested"</span>&gt;</span>
-			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-4 bg-light-blue"</span>&gt;</span>
-				col-xs-4
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-4 bg-light-blue"</span>&gt;</span>
+				col is-4
 			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-8 bg-dark-blue"</span>&gt;</span>
-				col-xs-8
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-8 bg-dark-blue"</span>&gt;</span>
+				col is-8
 			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-4 bg-light-blue-2"</span>&gt;</span>col-xs-4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col is-4 bg-light-blue-2"</span>&gt;</span>
+		col is-4
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 							</figure>
 						</div>

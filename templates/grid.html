@@ -19,98 +19,80 @@
 					<p>Awesome grid.</p>
 					<h3>Columns</h3>
 					<div class="row">
-						<div class="col-xs-12 col-md-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<div class="row is-nested">
-								<div class="col bg-blue">col</div>
-								<div class="col bg-light-blue-2">col</div>
-								<div class="col bg-blue">col</div>
-								<div class="col bg-light-blue-2">col</div>
+								{{> grid/columns.html}}
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<figure>
 								<pre><code class="html"><div class="row">
-	<div class="col bg-blue">col</div>
-	<div class="col bg-light-blue-2">col</div>
-	<div class="col bg-blue">col</div>
-	<div class="col bg-light-blue-2">col</div>
+{{> grid/columns.html}}
+
+</div></code></pre>
+							</figure>
+						</div>
+					</div>
+					<h3>Column sizing</h3>
+					<div class="row">
+						<div class="col is-12-on-xs is-6-on-md">
+							<div class="row is-nested">
+								{{> grid/sizing.html}}
+							</div>
+						</div>
+						<div class="col is-12-on-xs is-6-on-md">
+							<figure>
+								<pre><code class="html"><div class="row">
+{{> grid/sizing.html}}
+
 </div></code></pre>
 							</figure>
 						</div>
 					</div>
 					<h3>Responsive sizing</h3>
 					<div class="row">
-						<div class="col-xs-12 col-md-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<div class="row is-nested">
-								<div class="col-xs-6 col-md-3 bg-blue">col-xs-6<br>col-md-3</div>
-								<div class="col-xs-6 col-md-6 bg-light-blue-2">col-xs-6<br>col-md-6</div>
-								<div class="col-xs-12 col-md-3 bg-light-blue">col-xs-12<br>col-md-3</div>
+								{{> grid/responsive.html}}
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<figure>
 								<pre><code class="html"><div class="row">
-	<div class="col-xs-6 col-md-3 bg-blue"></div>
-	<div class="col-xs-6 col-md-6 bg-light-blue-2"></div>
-	<div class="col-xs-12 col-md-3 bg-light-blue"></div>
+{{> grid/responsive.html}}
+
 </div></code></pre>
 							</figure>
 						</div>
 					</div>
 					<h3>Offeset</h3>
 					<div class="row">
-						<div class="col-xs-12 col-md-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<div class="row is-nested">
-								<div class="col-xs-6 offset-xs-3 bg-blue">col-xs-6<br>offset-xs-3</div>
-								<div class="col-xs-4 offset-xs-8 bg-light-blue-2">col-xs-4<br>offset-xs-8</div>
-								<div class="col-xs-2 offset-xs-1 bg-blue">col-xs-2<br>offset-xs-1</div>
-								<div class="col-xs-7 offset-xs-2 bg-blue">col-xs-7<br>offset-xs-2</div>
+								{{> grid/offset.html}}
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<figure>
 								<pre><code class="html"><div class="row">
-	<div class="col-xs-6 offset-xs-3 bg-blue"></div>
-	<div class="col-xs-4 offset-xs-8 bg-light-blue-2"></div>
-	<div class="col-xs-2 offset-xs-1 bg-blue"></div>
-	<div class="col-xs-7 offset-xs-2 bg-blue"></div>
+{{> grid/offset.html}}
+
 </div></code></pre>
 							</figure>
 						</div>
 					</div>
 					<h3>Nesting</h3>
 					<div class="row">
-						<div class="col-xs-12 col-md-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<div class="row is-nested">
-								<div class="col-xs-8 bg-blue">
-									col-xs-8
-									<div class="row is-nested">
-										<div class="col-xs-4 bg-light-blue">
-											col-xs-4
-										</div>
-										<div class="col-xs-8 bg-dark-blue">
-											col-xs-8
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-4 bg-light-blue-2">col-xs-4</div>
+								{{> grid/nested.html}}
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col is-12-on-xs is-6-on-md">
 							<figure>
 								<pre><code class="html"><div class="row">
-	<div class="col-xs-8 bg-blue">
-		col-xs-8
-		<div class="row is-nested">
-			<div class="col-xs-4 bg-light-blue">
-				col-xs-4
-			</div>
-			<div class="col-xs-8 bg-dark-blue">
-				col-xs-8
-			</div>
-		</div>
-	</div>
-	<div class="col-xs-4 bg-light-blue-2">col-xs-4</div>
+{{> grid/nested.html}}
+
 </div></code></pre>
 							</figure>
 						</div>
