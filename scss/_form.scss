@@ -3,7 +3,7 @@ label {
 	font-weight: bolder;
 }
 
-input:not([type="checkbox"]):not([type="radio"]),
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
 select,
 textarea,
 button {
@@ -14,6 +14,7 @@ button {
 	font-size: 1rem;
 	outline: none;
 	padding: 0.25em;
+	min-height: 2em;
 	&:focus {
 		border: 1px solid $blue;
 	}
@@ -22,10 +23,12 @@ button {
 input:not([type="checkbox"]):not([type="radio"]),
 select,
 textarea {
-	box-shadow: inset $shadow;
 	margin-top: 0.5em;
 	max-width: 100%;
 	width: 100%;
+	&:not([type="range"]) {
+		box-shadow: inset $shadow;
+	}
 	&+small {
 		font-size: 0.7rem;
 		margin-top: 0.5em;
