@@ -1,7 +1,7 @@
 <form>
 	<label for="text">text</label>
-	<input id="text" type="text" name="text" required />
-	<small>this is the help text</small>
+	<input id="text" type="text" name="text" required pattern="hello.+" />
+	<small>pattern: "hello.+"</small>
 
 	<label for="email">email</label>
 	<input id="email" type="email" name="email" required />
@@ -38,7 +38,7 @@
 	<input type="radio" id="radio3" name="radio"><label for="radio3">Check it!</label>
 	<small>this is the help text</small>
 
-	<button type="submit">Submit</button>
+	<button type="submit" onclick="this.parentElement.classList.add('validating')">Log In</button>
 	<button type="reset">Reset</button>
 	<button type="button">Button</button>
 	<a href="/funke">Cancel</a>
