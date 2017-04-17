@@ -36,18 +36,3 @@ $breakpoints: (
 
 $columns: 12 !default;
 $gutter: 1rem !default;
-
-%no-gutter {
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 0;
-	padding-right: 0;
-};
-
-%column {
-	position: relative;
-	width: 100%;
-	min-height: 1px;
-	padding: $gutter;
-	margin-top: 0;
-};
