@@ -12,15 +12,15 @@ gulp.task('dev', ['server', 'watch']);
 
 gulp.task('server', function () {
 	let server = http.createServer({
-		root: './docs'
+		root: '.',
 	});
 	server.listen(8000);
-	gutil.log('Listening on http://localhost:8000')
+	gutil.log('Listening on http://localhost:8000/funke')
 });
 
 gulp.task('watch', function () {
 	gulp.watch('scss/**/*.scss', ['sass']);
-	gulp.watch('./templates/**/*.html', ['mustache']);
+	gulp.watch('templates/**/*.html', ['mustache']);
 });
 
 gulp.task('sass', function () {
