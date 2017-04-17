@@ -40,6 +40,8 @@ gulp.task('sass', function () {
 gulp.task('mustache', function () {
 	return gulp.src('./templates/*.html')
 		.pipe(mustache())
-		.pipe(highlight())
+		.pipe(highlight({
+			languageSubset: ['html']
+		}))
 		.pipe(gulp.dest('docs'));
 })
