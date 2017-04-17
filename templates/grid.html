@@ -32,10 +32,10 @@
 								<pre>
 									<code>
 &lt;div class="row">
-&lt;div class="col bg-blue">col&lt;/div>
-&lt;div class="col bg-light-blue-2">col&lt;/div>
-&lt;div class="col bg-blue">col&lt;/div>
-&lt;div class="col bg-light-blue-2">col&lt;/div>
+	&lt;div class="col bg-blue">col&lt;/div>
+	&lt;div class="col bg-light-blue-2">col&lt;/div>
+	&lt;div class="col bg-blue">col&lt;/div>
+	&lt;div class="col bg-light-blue-2">col&lt;/div>
 &lt;/div>
 									</code>
 								</pre>
@@ -56,9 +56,9 @@
 								<pre>
 									<code>
 &lt;div class="row">
-&lt;div class="col-xs-6 col-md-3 bg-blue">&lt;/div>
-&lt;div class="col-xs-6 col-md-6 bg-light-blue-2">&lt;/div>
-&lt;div class="col-xs-12 col-md-3 bg-light-blue">&lt;/div>
+	&lt;div class="col-xs-6 col-md-3 bg-blue">&lt;/div>
+	&lt;div class="col-xs-6 col-md-6 bg-light-blue-2">&lt;/div>
+	&lt;div class="col-xs-12 col-md-3 bg-light-blue">&lt;/div>
 &lt;/div>
 									</code>
 								</pre>
@@ -80,10 +80,51 @@
 								<pre>
 									<code>
 &lt;div class="row">
-&lt;div class="col-xs-6 offset-xs-3 bg-blue">&lt;/div>
-&lt;div class="col-xs-4 offset-xs-8 bg-light-blue-2">&lt;/div>
-&lt;div class="col-xs-2 offset-xs-1 bg-blue">&lt;/div>
-&lt;div class="col-xs-7 offset-xs-2 bg-blue">&lt;/div>
+	&lt;div class="col-xs-6 offset-xs-3 bg-blue">&lt;/div>
+	&lt;div class="col-xs-4 offset-xs-8 bg-light-blue-2">&lt;/div>
+	&lt;div class="col-xs-2 offset-xs-1 bg-blue">&lt;/div>
+	&lt;div class="col-xs-7 offset-xs-2 bg-blue">&lt;/div>
+&lt;/div>
+									</code>
+								</pre>
+							</figure>
+						</div>
+					</div>
+					<h3>Nesting</h3>
+					<div class="row">
+						<div class="col-xs-12 col-md-6">
+							<div class="row is-nested">
+								<div class="col-xs-8 bg-blue">
+									col-xs-8
+									<div class="row is-nested">
+										<div class="col-xs-4 bg-light-blue">
+											col-xs-4
+										</div>
+										<div class="col-xs-8 bg-dark-blue">
+											col-xs-8
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 bg-light-blue-2">col-xs-4</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<figure>
+								<pre>
+									<code>
+&lt;div class="row">
+	&lt;div class="col-xs-8 bg-blue">
+		col-xs-8
+		&lt;div class="row is-nested">
+			&lt;div class="col-xs-4 bg-light-blue">
+				col-xs-4
+			&lt;/div>
+			&lt;div class="col-xs-8 bg-dark-blue">
+				col-xs-8
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="col-xs-4 bg-light-blue-2">col-xs-4&lt;/div>
 &lt;/div>
 									</code>
 								</pre>
