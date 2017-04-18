@@ -81,7 +81,7 @@ pre {
 	background: white;
 	border-radius: 0.25em;
 	border: 1px solid $gray;
-	box-shadow: $shadow;
+	box-shadow: inset $shadow;
 	overflow: scroll;
 }
 

@@ -7,14 +7,13 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
 select,
 textarea,
 button {
-	appearance: none;
 	background: white;
 	border-radius: 0.25em;
 	border: 1px solid $gray;
 	font-size: 1rem;
 	outline: none;
-	padding: 0.25em;
-	min-height: 2em;
+	padding: 0.25em 0.5em;
+	height: 2em;
 	&::placeholder {
 		color: $gray;
 	}
@@ -23,7 +22,7 @@ button {
 	}
 }
 
-input:not([type="checkbox"]):not([type="radio"]),
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
 select,
 textarea {
 	margin-top: 0.5em;
@@ -61,6 +60,9 @@ input[type="radio"] {
 	}
 }
 
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
 button {
 	box-shadow: $shadow;
 	margin-right: 0.5em;
