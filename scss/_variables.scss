@@ -1,6 +1,6 @@
 // Colors
 $black: #222 !default;
-$blue: #0066ff !default;
+$blue: #4431ff !default;
 $gray: #ccc !default;
 
 //Test
@@ -17,14 +17,14 @@ $shadow: 0px 1px 2px rgba(10, 10, 10, 0.1) !default;
 $family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
 $render-mode: optimizeLegibility !default;
 
-$font-size: 16px !default;
+$font-size: calc(1em + .5vw) !default;
 $font-size-base: 1rem !default;
-$font-size-h1: 4rem !default;
-$font-size-h2: 3.5rem !default;
-$font-size-h3: 3rem !default;
-$font-size-h4: 2.5rem !default;
-$font-size-h5: 2rem !default;
-$font-size-h6: 1.5rem !default;
+$font-size-h1: 3.5em !default;
+$font-size-h2: 2.92em !default;
+$font-size-h3: 2.43em !default;
+$font-size-h4: 2.025em !default;
+$font-size-h5: 1.69em !default;
+$font-size-h6: 1.4em !default;
 
 $body-background: #fff !default;
 
