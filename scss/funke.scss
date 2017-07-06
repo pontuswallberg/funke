@@ -121,6 +121,87 @@ nav.simple-nav {
 	}
 }
 
+button {
+	display: inline-block;
+	font-size: .85em;
+	padding: .6em 1.2em;
+	margin: 0;
+	color: white;
+	font-weight: 500;
+	border-radius: 2px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, .15);
+	&:hover {
+		box-shadow: 0 2px 20px rgba(0, 0, 0, .33);
+	}
+	&.glow {
+		box-shadow: 0 2px 20px rgba(57, 106, 252, .5);
+		&:hover {
+			box-shadow: 0 2px 20px rgba(57, 106, 252, .75);
+		}
+	}
+}
+
+button.primary {
+	background: #396afc;
+	background: linear-gradient(to right, #2948ff, #396afc);
+	&:hover {
+		
+	}
+}
+
+button.primary-outline {
+	padding: calc(.6em - 1px) calc(1.2em - 1px);
+	color: #2948ff;
+	background-color: white;
+	border: 1px solid #2948ff;
+	&:hover {
+		color: white;
+		background: #396afc;
+		background: linear-gradient(to right, #2948ff, #396afc);
+		border-color: transparent;
+	}
+}
+
+button.secondary {
+	background: #7d98ff;
+	background: linear-gradient(to right, #7874ff, #7d98ff);
+}
+
+button.secondary-outline {
+	padding: calc(.6em - 1px) calc(1.2em - 1px);
+	color: #7874ff;
+	background-color: white;
+	border: 1px solid #7874ff;
+	&:hover {
+		color: white;
+		background: #396afc;
+		background: linear-gradient(to right, #7874ff, #7d98ff);
+		border-color: transparent;
+	}
+}
+
+button.angry {
+	background: #0040c8;
+	background: linear-gradient(to right, #001fca, #0040c8);
+	border-radius: 0;
+	text-decoration: underline;
+}
+
+button.angry-outline {
+	padding: calc(.6em - 1px) calc(1.2em - 1px);
+	color: #001fca;
+	background-color: white;
+	border: 1px solid #001fca;
+	border-radius: 0;
+	text-decoration: underline;
+	&:hover {
+		color: white;
+		background: #396afc;
+		background: linear-gradient(to right, #001fca, #0040c8);
+		border-color: transparent;
+	}
+}
+
 @import "utilities";
 @import "grid/grid";
 @import "form";
