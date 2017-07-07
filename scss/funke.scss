@@ -139,65 +139,70 @@ button {
 			box-shadow: 0 2px 20px rgba(57, 106, 252, .75);
 		}
 	}
+	&.hero {
+		font-size: 1em;
+		padding: 1em 2em;
+	}
 }
 
 button.primary {
-	background: #396afc;
-	background: linear-gradient(to right, #2948ff, #396afc);
+	background: $secondary;
+	background: linear-gradient(to right, $primary, $secondary);
 	&:hover {
-		
+		background: linear-gradient(to right, $primary-dark, $secondary-dark);
+		background: linear-gradient(to right, $primary-light, $secondary-light);
+		background: linear-gradient(to right, $primary, $primary);
 	}
 }
 
 button.primary-outline {
-	padding: calc(.6em - 1px) calc(1.2em - 1px);
-	color: #2948ff;
+	color: $primary-light;
 	background-color: white;
-	border: 1px solid #2948ff;
+	box-shadow: inset 0 0 0 1px $primary-light, 0 2px 20px rgba(0, 0, 0, .15);
+	
 	&:hover {
 		color: white;
-		background: #396afc;
-		background: linear-gradient(to right, #2948ff, #396afc);
-		border-color: transparent;
+		background: linear-gradient(to right, $primary-light, $secondary-light);
+		box-shadow: 0 2px 20px rgba(0, 0, 0, .33);
 	}
 }
 
 button.secondary {
-	background: #7d98ff;
-	background: linear-gradient(to right, #7874ff, #7d98ff);
+	background: $secondary-light;
+	background: linear-gradient(to right, $primary-light, $secondary-light);
 }
 
 button.secondary-outline {
 	padding: calc(.6em - 1px) calc(1.2em - 1px);
-	color: #7874ff;
+	color: $primary-light;
 	background-color: white;
-	border: 1px solid #7874ff;
+	border: 1px solid $primary-light;
 	&:hover {
 		color: white;
-		background: #396afc;
-		background: linear-gradient(to right, #7874ff, #7d98ff);
+		background: $secondary;
+		background: linear-gradient(to right, $primary-light, $secondary-light);
 		border-color: transparent;
 	}
 }
 
 button.angry {
-	background: #0040c8;
-	background: linear-gradient(to right, #001fca, #0040c8);
+	background: $secondary-dark;
+	background: linear-gradient(to right, $primary-dark, $secondary-dark);
 	border-radius: 0;
 	text-decoration: underline;
 }
 
 button.angry-outline {
 	padding: calc(.6em - 1px) calc(1.2em - 1px);
-	color: #001fca;
+	color: $primary-dark;
 	background-color: white;
-	border: 1px solid #001fca;
+	border: 1px solid $primary-dark;
 	border-radius: 0;
 	text-decoration: underline;
 	&:hover {
 		color: white;
-		background: #396afc;
-		background: linear-gradient(to right, #001fca, #0040c8);
+		background: $secondary;
+		background: linear-gradient(to right, $primary-dark, $secondary-dark);
 		border-color: transparent;
 	}
 }
@@ -205,3 +210,42 @@ button.angry-outline {
 @import "utilities";
 @import "grid/grid";
 @import "form";
+
+
+/**
+* Specific
+**/
+
+.hero-section {
+	p:first-of-type {
+		font-size: 1.4em;
+	}
+	p {
+		max-width: 30em;
+	}
+	button {
+		margin-top: 2em;
+	}
+}
+
+.hp-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+	overflow: hidden;
+	transform: skewY(-8deg);
+	transform-origin: 0;
+	background: linear-gradient(to right, $primary-light, $secondary);
+	box-shadow: 0 2px 20px rgba(0, 0, 0, .15);
+	&.under {
+		height: 50%;
+		transform: skewY(4deg);
+		z-index: -1;
+		background: linear-gradient(to right, $primary-dark, $secondary-dark);
+	}
+}
+.hp-cont {
+	color: #fff;
+}
