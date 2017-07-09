@@ -5,8 +5,7 @@ label {
 
 input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
 select,
-textarea,
-button {
+textarea {
 	background: white;
 	border-radius: 0.25em;
 	border: 1px solid $gray;
@@ -62,8 +61,7 @@ input[type="radio"] {
 
 input[type="submit"],
 input[type="reset"],
-input[type="button"],
-button {
+input[type="button"] {
 	box-shadow: $shadow;
 	margin-right: 0.5em;
 	&[type="submit"] {

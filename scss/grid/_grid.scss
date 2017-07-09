@@ -1,6 +1,12 @@
 @import "placeholders";
 @import "../mixins";
 
+.simple {
+	display: block;
+	padding-left: $simple;
+	padding-right: $simple;
+}
+
 // Container wrap content in this to set max-width
 .container {
 	display: block;
