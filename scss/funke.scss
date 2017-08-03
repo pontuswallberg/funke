@@ -226,6 +226,10 @@ button.angry-outline {
 	button {
 		margin-top: 2em;
 	}
+	img {
+		height: auto;
+		max-width: 100%;
+	}
 }
 
 .hp-back {
@@ -248,4 +252,13 @@ button.angry-outline {
 }
 .hp-cont {
 	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	img {
+		margin-right: 5rem;
+		width: 10rem;
+	}
+	div {
+		margin-top: 0;
+	}
 }
